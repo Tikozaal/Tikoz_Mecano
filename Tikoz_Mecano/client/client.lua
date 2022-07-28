@@ -3,7 +3,6 @@ ESX = nil
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
 local Tikozaal = {}
-local societyfermiermoney = nil
 local PlayerData = {}
 
 RegisterNetEvent('esx:playerLoaded')
