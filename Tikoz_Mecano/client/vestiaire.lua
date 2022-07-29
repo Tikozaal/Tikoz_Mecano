@@ -52,9 +52,9 @@ local menuvestiaire = {
         onSelected = function(self, _, btn, PMenu, menuData, result)
 
             if btn.name == "Tenu mécano" then
-                vuniformetaxi()
+                Tmecano()
             elseif btn.name == "Tenu civil" then
-                vcivil()
+                Tcivil()
             elseif btn.name == "~r~Fermé" then
                 CloseMenu()
             end
@@ -95,7 +95,7 @@ Citizen.CreateThread(function()
     end
 end)
 
-function vuniformetaxi()
+function Tmecano()
     TriggerEvent('skinchanger:getSkin', function(skin)
         local uniformObject
         if skin.sex == 0 then
@@ -108,7 +108,7 @@ function vuniformetaxi()
         end
     end)end
 
-function vcivil()
+function Tcivil()
 ESX.TriggerServerCallback('esx_skin:getPlayerSkin', function(skin, jobSkin)
 TriggerEvent('skinchanger:loadSkin', skin)
 end)
