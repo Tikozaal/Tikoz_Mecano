@@ -75,7 +75,6 @@ function facturemecano()
               ClearPedTasks(playerPed)
               TriggerServerEvent('esx_billing:sendBill', GetPlayerServerId(closestPlayer), 'society_mechanic', "~b~Benny's", amount)
               ESX.ShowNotification("Vous avez bien envoyer la ~b~facture")
-              table.insert(menufacture.Menu["Facture ~b~envoyé"].b, {name = "~b~"..GetPlayerName(closestPlayer), ask = "~g~"..amount.."$", askX = true})
   
           end)
         end
