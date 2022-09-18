@@ -322,14 +322,10 @@ end,
     }
 }
 
-Citizen.CreateThread(function()
-    while true do 
-        local inter = 7
-        if IsControlJustPressed(1, 167) and ESX.PlayerData.job.name == "mechanic" then
-            inter = 0
-            CreateMenu(menumecano)
-        end
-        Wait(inter)
+
+keyRegister("TikozOpenMecano", "Menu F6", "F6", function()
+    if ESX.PlayerData.job.name == "mechanic" then
+        CreateMenu(menumecano)
     end
 end)
 
