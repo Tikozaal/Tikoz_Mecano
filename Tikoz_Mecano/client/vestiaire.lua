@@ -109,7 +109,7 @@ function Tmecano()
     end)end
 
 function Tcivil()
-ESX.TriggerServerCallback('esx_skin:getPlayerSkin', function(skin, jobSkin)
-TriggerEvent('skinchanger:loadSkin', skin)
-end)
+	ESX.TriggerServerCallback('esx_skin:getPlayerSkin', function(skin, jobSkin)
+		TriggerEvent('skinchanger:loadSkin', skin)
+	end)
 end
