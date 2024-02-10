@@ -20,7 +20,7 @@ Config.Pos = {
 
     Boss = vector3(-213.4, -1334.77, 33.89),
 
-	BossPolice = vector3(448.28, -973.18, 29.69),
+	Boss = vector3(448.28, -973.18, 29.69),
 
     Blip = vector3(-216.26, -1319.02, 29.89)
 
